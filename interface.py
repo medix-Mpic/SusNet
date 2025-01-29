@@ -12,7 +12,7 @@ st.set_page_config(
 
 # Streamlit UI
 st.title("Secure Brain: SusNet")
-st.image("front/images/dataset-cover.jpg", use_column_width=True)
+st.image("front/images/dataset-cover.jpg", use_container_width=True)
 # Dataset Information
 st.header("About the BETH Dataset")
 st.write(
