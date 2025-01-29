@@ -29,12 +29,11 @@ def predict_from_dataframe(model_path, input_data , orig_data):
     # Reorder columns to make 'prediction' the first column
     columns = ['prediction'] + [col for col in orig_data.columns if col != 'prediction']
     orig_data = orig_data[columns]
-<<<<<<< HEAD
+
     
     # Exclude 'sus' and 'evil' columns if they exist
     columns_to_exclude = ['sus', 'evil']
     orig_data = orig_data.loc[:, ~orig_data.columns.isin(columns_to_exclude)]
-=======
->>>>>>> ae4ca2225ab7218f1ed3ba25d4a51d8c90742844
+
         
     return orig_data
